@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>merisen website</title>
+</head>
+<body>
+<div class="content">
+    <h1>merisen</h1>
+    <h1>Java & Kotlin Developer</h1>
+</div>
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<script>
+    const cursor = document.querySelector(".cursor");
+    const cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove", function (e) {
+        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+</script>
+</body>
+</html>
